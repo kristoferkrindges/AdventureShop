@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+// import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.salesadventure.adventure.entities.User;
@@ -20,10 +20,10 @@ public class UserResource {
         List<User> list = new ArrayList<>();
         // User u = new User(1L, "Maria", "maria@gmail.com", 
         // "99999", "12345");
-        list.add(new User(1L, "Maria", "maria@gmail.com", 
-        "99999", "12345"));
-        list.add(new User(1L, "Jack", "jack@gmail.com", 
-        "99999", "12345"));
+        // list.add(new User(1L, "Maria", "maria@gmail.com", 
+        // "99999", "12345"));
+        // list.add(new User(1L, "Jack", "jack@gmail.com", 
+        // "99999", "12345"));
 
         return ResponseEntity.ok().body(list);
     }
